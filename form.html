@@ -13,22 +13,15 @@
     
      
      <h1> Mande uma mensagem </h1>
-     <form>
-          <div class="form-row">
-         <div class = "col">
-             <label for="labelName">Nome</label>
-            <input type="text" class = "form-control" placeholder = "Nome">
-         </div>
-         <div class="col">
-             <label for="labelSobrenome">Sobrenome</label>
-            <input type="text" class = "form-control" placeholder = "Sobrenome">
-              </div> 
-         </div>
+     
+         <form class="form-signin" action="http://formulario-ucsal.appspot.com/DadosFormulario" method="post">
+      
+             
         
          <div class="form-row">
               <div class="col">
           <label for = "txtEmail" >Email</label>
-             <input type="email" class="form-control" id="txtEmail" placeholder="seuemail@email.com">
+             <input type="email" name="site" class="form-control" id="txtEmail" placeholder="seuemail@email.com" required="" autofocus="">
           </div>
                           
          </div>
@@ -36,14 +29,16 @@
          <div class="form-row">
              <div class="col">
                  <label for=textArea> Mensagem </label>
-                 <textarea class="form-control" id="textArea"  rows="4" cols="10"></textarea>
+                 <textarea class="form-control" name="texto" id="textArea"  rows="4" cols="10"></textarea>
              
              </div>
          
          </div>
+         
+         <button type="submit" class="btn  btn-enviar">Enviar</button>
      </form>
      
-     <button type="button" class="btn  btn-enviar">Enviar</button>
+     
          
      
       <script src ="node_modules/jquery/dist/jquery.js"></script>
